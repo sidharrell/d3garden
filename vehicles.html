@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        var dataset;
+        d3.csv("vehicles.csv", function(error, data) {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log(data);
+                dataset = data;
+
+            }
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
